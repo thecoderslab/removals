@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/686f4fd538.js" crossorigin="anonymous"></script>
+
+    <style>
+        #banner a {
+            color: #FF63F1;
+        }
+    </style>
+
+</head>
+<body>
+<section id="nav_bar">
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true" style="color: #ffffff"></i>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav ml-auto text-right">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#service">Services</a>
+                <a class="nav-item nav-link" href="#testimonial">Reviews</a>
+                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+</section> <!-- end nav_bar section -->
+<section id="banner" style="background-color: #663366 ; color: white ; padding: 80px 0; ">
+    <div class="container">
+        <div class="row justify-content-around text-center">
+            <div class="col-md-6">
+                <h1 style="font-weight: 700">Moving has never been this easy </h1>
+                <span id="video_play">
+                    <a href=""> <i class="fa fa-play-circle-o fa-5x"></i></a>
+                </span>
+            </div>
+            <div class="col-md-6">
+                <img src="{{asset('assets/img/banner.png')}}" class="img-fluid h-100 w-100"/>
+            </div>
+        </div>
+    </div>
+</section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#663366" fill-opacity="1"
+          d="M0,288L60,288C120,288,240,288,360,261.3C480,235,600,181,720,154.7C840,128,960,128,1080,154.7C1200,181,1320,235,1380,261.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+</svg>
+
+<section id="about">
+    <div class="container">
+        <div class="row justify-content-between ">
+            <div class="col-md-6">
+                <h1 class="text-center" style="font-weight: 600">What makes us different</h1>
+                <p class="text-justify">
+                    Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed
+                    odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc
+                    posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+                    Cras mattis iudicium purus sit amet fermentum.
+                </p>
+                <a class="">Learn More</a>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="form_holder">
+                    <form action="" method="post" id="quick_quote_form">
+
+                        <div class="card" style="background-color: #663366; color: #ffffff ; padding: 15px">
+                            <div class="card-header">
+                                Request a Quote
+                            </div>
+                            <div class="card-body">
+
+                                <div class="row form-group">
+                                    <label for="moving-from">Moving From</label>
+                                    <input type="text" name="movingFrom" class="form-control" id="moving-from"
+                                           placeholder="Unit 4 Dartbrook Road">
+                                </div>
+
+                                <div class="row form-group">
+                                    <label for="moving-to">Moving To</label>
+                                    <input type="text" name="movingTo" class="form-control" id="moving-to"
+                                           placeholder="Unit 4 Clyde Street">
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <input type="submit" name="submit" class="" id="" value="Request Quote">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- end about section -->
+
+<section id="service">
+    <div class="container">
+        <h1 class="text-center">Our services</h1>
+        <p class="text-center text-justify">
+            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed
+            odio operae,
+        </p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tools fa-3x" style="color: #663366"></i>
+                        <h4>Reassembly</h4>
+                        <p>
+                            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fa fa-building fa-3x" style="color: #663366"></i>
+                        <h4>Office Relocation</h4>
+                        <p>
+                            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" style="background-color: #663366;color: white">
+                    <div class="card-body text-center">
+                        <i class="fa fa-road fa-3x" style="color: #ffffff"></i>
+                        <h4>Interstate Removals</h4>
+                        <p>
+                            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fa fa-home fa-4x" style="color: #663366"></i>
+                        <h4>Home Removals</h4>
+                        <p>
+                            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</section><!-- end section service-->
+
+<section id="checklist" style="background-color: #663366 ">
+    <div class="container">
+        <div class="row" style="height:500px ">
+
+        </div>
+    </div>
+</section> <!--end checklist-->
+
+<section id="get_quote" style="min-height: 100px ; background-color: #f5f4f3 ; color: #663366; padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h2>Getting a Moving Quote is simple. It's fast & easy!</h2>
+            </div>
+
+            <div class="col-md-3">
+                <a href="">Get Quote</a>
+            </div>
+        </div>
+    </div>
+</section> <!--end get Quote-->
+
+<section id="past-works" style=" padding: 80px;">
+    <div class="column">
+        <div class="row justify-content-around">
+            <div class="col-md-4">
+                <div class="card" style="color: white; background-color: #663366">
+                    <div class="card-body">
+                        <div class="row">
+                            <i class="fa fa-smile-o fa-3x"></i>
+                            <span>150 Happy Customers</span>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-box fa-3x"></i>
+                            <span>1500 Box moved</span>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-calendar fa-3x"></i>
+                            <span>2 Years of serving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h2 style="font-weight: 600">From Planning to Unpacking</h2>
+                <p>
+                    Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed
+                    odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
+                </p>
+                <p>
+                    Asthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+                    Cras mattis iudicium purus sit amet fermentum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section> <!-- end past work -->
+
+<section id="testimonial" style=" background-color: #f5f4f3 ; padding: 80px 0;">
+    <div class="container">
+        <h1 class="text-center">Hear From Our Customer</h1>
+        <div class="row" style="padding: 30px 0;">
+            <div class="col-md-4">
+                <div class="card" style="padding: 30px">
+                    <div class="card-body">
+                        <p>
+                            "Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
+                            fermentum.Donec sed
+                            odio operae,"
+                        </p>
+                        <img src="{{asset('assets/img/dp.jpg')}}" class="rounded" height="50" width="50"> <strong>Ashish
+                            Tiwari</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="padding: 30px">
+                    <div class="card-body">
+                        <p>
+                            "Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
+                            fermentum.Donec sed
+                            odio operae,"
+                        </p>
+                        <img src="{{asset('assets/img/dp.jpg')}}" class="rounded" height="50" width="50"> <strong>Ashish
+                            Tiwari</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="padding: 30px">
+                    <div class="card-body">
+                        <p>
+                            "Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
+                            fermentum.Donec sed
+                            odio operae,"
+                        </p>
+                        <img src="{{asset('assets/img/dp.jpg')}}" class="rounded" height="50" width="50"> <strong>Ashish
+                            Tiwari</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="">View All Testimonials</a>
+
+    </div>
+</section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#663366" fill-opacity="1"
+          d="M0,192L80,170.7C160,149,320,107,480,122.7C640,139,800,213,960,234.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
+<footer style=" padding: 80px 0" id="contact">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-6">
+                <img src="{{asset('assets/img/contact.svg')}}" class="w-100 h-100">
+            </div>
+
+            <div class="col-md-4">
+                <h2 class="text-center">Contact Us</h2>
+                <form>
+                    <div class="row form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" class="form-control" id="fullname">
+                    </div>
+                    <div class="row form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="row form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="note" rows="3"></textarea>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Send" class="btn"
+                               style="background-color: #663366; color: white; width: 150px; padding:10px">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer><!--end footer-->
+</body>
+</html>

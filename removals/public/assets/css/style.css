@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*************navbar**************/
+#navbar {
+    background: #663366;
+}
+
+.nav-link{
+    color: #ffffff;
+}
+
+
+/******** quick quote form **********/
+.form_holder {
+
+}
+
+/*section about*/
+#about {
+    height: 500px;
+}
+
+#about a, #get_quote a {
+    display: block;
+    color: #ffffff;
+    background: #663366;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#about a:hover {
+    background: #ffffff;
+    color: #663366;
+    border: 1px solid #663366;
+    cursor: pointer;
+}
+
+/*** section service ***/
+#service {
+    background-color: #f5f4f3;
+    padding: 80px 0;
+}
+
+#service p {
+    padding: 10px 0;
+}
+
+#service h1 {
+    font-weight: 600;
+}
+
+
+/************past work *****/
+#past-works .row {
+    margin: 40px 0;
+}
+
+#past-works span {
+    margin: 15px;
+    font-weight: 300;
+}
+
+
+#testimonial a {
+    text-align: center;
+    display: block;
+    padding: 25px;
+    background-color: #663366;
+    color: white;
+    cursor: pointer;
+    width: 250px;
+}
+
